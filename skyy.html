@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SkyMet Clone</title>
+  <style>
+    /* Global Styles */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: Arial, sans-serif;
+    }
+
+    body {
+      background-color: #f4f4f9;
+      color: #333;
+      line-height: 1.6;
+    }
+
+    /* Header Styles */
+    .header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 20px;
+      background-color: #007acc;
+      color: white;
+    }
+
+    .header .logo {
+      font-size: 24px;
+      font-weight: bold;
+    }
+
+    .navigation ul {
+      display: flex;
+      list-style: none;
+    }
+
+    .navigation li {
+      margin: 0 15px;
+    }
+
+    .navigation a {
+      color: white;
+      text-decoration: none;
+      font-size: 16px;
+    }
+
+    .navigation a:hover {
+      text-decoration: underline;
+    }
+
+    /* Banner Styles */
+    .banner {
+      text-align: center;
+      padding: 50px;
+      background: linear-gradient(to bottom, #007acc, #005f99);
+      color: white;
+    }
+
+    .banner h1 {
+      font-size: 36px;
+      margin-bottom: 10px;
+    }
+
+    .banner p {
+      font-size: 18px;
+    }
+
+    /* Weather Section Styles */
+    .weather-section {
+      padding: 20px;
+      background-color: #ffffff;
+    }
+
+    .weather-section h2 {
+      text-align: center;
+      margin-bottom: 20px;
+    }
+
+    .weather-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+      gap: 20px;
+    }
+
+    .weather-card {
+      background-color: #f9f9f9;
+      padding: 20px;
+      border: 1px solid #ddd;
+      border-radius: 8px;
+      text-align: center;
+    }
+
+    .weather-card h3 {
+      margin-bottom: 10px;
+    }
+
+    .weather-card p {
+      font-size: 16px;
+    }
+
+    /* News Section */
+    .news-section {
+      padding: 20px;
+      background-color: #f4f4f9;
+    }
+
+    .news-section h2 {
+      text-align: center;
+      margin-bottom: 20px;
+    }
+
+    .news-item {
+      background-color: #ffffff;
+      padding: 20px;
+      margin-bottom: 20px;
+      border: 1px solid #ddd;
+      border-radius: 8px;
+    }
+
+    .news-item h3 {
+      margin-bottom: 10px;
+    }
+
+    .news-item p {
+      font-size: 14px;
+    }
+
+    /* Footer Styles */
+    .footer {
+      text-align: center;
+      padding: 10px;
+      background-color: #007acc;
+      color: white;
+      margin-top: 20px;
+    }
+  </style>
+</head>
+<body>
+  <!-- Header Section -->
+  <header class="header">
+    <div class="logo">SkyMet Clone</div>
+    <nav class="navigation">
+      <ul>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#weather">Weather</a></li>
+        <li><a href="#news">News</a></li>
+        <li><a href="#alerts">Alerts</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Banner Section -->
+  <section class="banner">
+    <h1>Real-Time Weather Updates</h1>
+    <p>Get the latest and most accurate weather forecasts.</p>
+  </section>
+
+  <!-- Weather Section -->
+  <section id="weather" class="weather-section">
+    <h2>Today's Weather</h2>
+    <div class="weather-grid">
+      <div class="weather-card">
+        <h3>New York</h3>
+        <p>Sunny, 25°C</p>
+      </div>
+      <div class="weather-card">
+        <h3>London</h3>
+        <p>Cloudy, 18°C</p>
+      </div>
+      <div class="weather-card">
+        <h3>Tokyo</h3>
+        <p>Rainy, 20°C</p>
+      </div>
+      <div class="weather-card">
+        <h3>Sydney</h3>
+        <p>Clear, 22°C</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- News Section -->
+  <section id="news" class="news-section">
+    <h2>Latest Weather News</h2>
+    <div class="news-item">
+      <h3>Heavy Rainfall Predicted</h3>
+      <p>Severe rainfall is expected in coastal areas over the weekend. Prepare accordingly.</p>
+    </div>
+    <div class="news-item">
+      <h3>Heatwave Alert</h3>
+      <p>A heatwave warning has been issued for northern states. Stay hydrated and avoid outdoor activities.</p>
+    </div>
+  </section>
+
+  <!-- Footer Section -->
+  <footer class="footer">
+    <p>&copy; 2025 SkyMet Clone. All Rights Reserved.</p>
+  </footer>
+</body>
+</html>
