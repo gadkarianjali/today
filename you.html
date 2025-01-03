@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>YouTube Clone</title>
+  <style>
+    * {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 20px;
+  background-color: #202020;
+  color: white;
+}
+
+.logo {
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.search-bar {
+  width: 50%;
+  padding: 5px;
+  border: none;
+  border-radius: 4px;
+}
+
+.search-button {
+  padding: 5px 10px;
+  margin-left: 5px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.container {
+  display: flex;
+  height: calc(100vh - 60px);
+}
+
+.sidebar {
+  width: 20%;
+  background-color: #303030;
+  color: white;
+  padding: 20px;
+}
+
+.sidebar ul {
+  list-style: none;
+}
+
+.sidebar li {
+  margin: 15px 0;
+  cursor: pointer;
+}
+
+.main-content {
+  flex: 1;
+  padding: 20px;
+  overflow-y: auto;
+}
+
+.video-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  gap: 20px;
+}
+
+.video-card {
+  background-color: #f9f9f9;
+  padding: 10px;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.video-card img {
+  width: 100%;
+  border-radius: 8px;
+}
+
+.video-card h3 {
+  font-size: 16px;
+  margin: 10px 0 5px;
+}
+
+.video-card p {
+  font-size: 14px;
+  color: #555;
+}
+</style>
+</head>
+<body>
+  <header class="header">
+    <div class="logo">YouTube Clone</div>
+    <input type="text" placeholder="Search" class="search-bar">
+    <button class="search-button">🔍</button>
+  </header>
+
+  <div class="container">
+    <aside class="sidebar">
+      <nav>
+        <ul>
+          <li>Home</li>
+          <li>Trending</li>
+          <li>Subscriptions</li>
+          <li>Library</li>
+          <li>History</li>
+        </ul>
+      </nav>
+    </aside>
+
+    <main class="main-content">
+      <div class="video-grid">
+        <div class="video-card">
+          <img src="https://via.placeholder.com/200" alt="Video Thumbnail">
+          <h3>Video Title</h3>
+          <p>Channel Name</p>
+        </div>
+        <div class="video-card">
+          <img src="https://via.placeholder.com/200" alt="Video Thumbnail">
+          <h3>Video Title</h3>
+          <p>Channel Name</p>
+        </div>
+        <!-- Add more video cards as needed -->
+      </div>
+    </main>
+  </div>
+</body>
+</html>

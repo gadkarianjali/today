@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .p1 {
+            display:flex ;
+            background-color:skyblue;
+            padding: 10px 20px;
+            width:100%;
+            height:40px;
+            justify-content: space-evenly;
+            border-width: 100%;
+        }
+        .p2 {
+            display: flex;
+            color: white;
+            column-gap: 5px;
+            padding-left: 50px;
+        }
+        .p4 {
+            display: flex;
+            color: white;
+            padding:10px 20px;
+        }
+        .p5 {
+            display: flex;
+            color: lightgrey;
+            padding-left: 50px;
+            row-gap: 5px;
+        }
+        .p6 {
+            display: right;
+        }
+        .p7 {
+            display: flex;
+            padding:10px 20px;
+            background-color: skyblue;
+            color: white;
+            width:100%;
+            height:30px;
+            text-align: center;
+            border-width: 100%;
+        }
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            display: flex;
+            width:100%;
+            align-items: center;
+            background-color: #f0f0f0;
+            font-family: Arial, sans-serif;
+        }
+
+        .slider {
+            width: 800px;
+            height: 400px;
+            overflow: hidden;
+            position: relative;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+
+        .slides {
+            display: flex;
+            width: 300%;
+            animation: slide 10s infinite;
+        }
+
+        .slide {
+             width: 100%;
+             flex-shrink: 0;
+            }
+
+        .slide img {
+            width: 50%;
+            height: 80%;
+            object-fit: cover;
+        }
+
+        @keyframes slide {
+        0% {
+        transform: translateX(0);
+        }
+        33% {
+        transform: translateX(-100%);
+        }
+        66% {
+        transform: translateX(-200%);
+         }
+        100% {
+        transform: translateX(0);
+        }
+        }
+        .p8 {
+            display: flex;
+            color: #f0f0f0;
+            padding: 5px;
+            margin: 8px;
+            width:100%;
+            height:30px;
+        }
+        .p9 {
+            color: black;
+            row-gap: 5px;
+            padding: 5px;
+        }
+        .p10 {
+            color:greenyellow;
+            right: 20%;
+            padding-left: 20px;;
+            display:right;
+        }
+        .p11 {
+            display:right;
+            padding-left:20px;
+            right: 20%;
+            color:#f0f0f0
+        }
+    </style>
+</head>
+<body>
+    <div class="p3">
+    <nav class="p1">
+        <div class="p2">SKYSENSE</div>
+        <div class="p2">SKAIGEO</divn>
+        <div class="p2">SIKIA AWARDS</div>
+        <div class="p2">AIR POLLUTION</div>
+        <div class="p2">HINDI STORIES</div>
+        <div class="p2">SATELLITE</div>
+    </nav>
+    <nav class ="p4">
+        <div class="p5">IMages</div>
+        <div class="p5">contanct us</div>
+        <div class="p5">CORPATE</div>
+    </nav>
+    <img src="sky.jpg" width="30%" height="30%" class="p6"/></br></br>
+    <div>
+        <nav class="p8">
+            <div class="p9">HOME</div>
+            <div class="p9">MAPS</div>
+            <div class="p9">Satellites</div>
+            <div class="p9">Weather News and Analysis</div>
+            <div class="p9">Videos</div>
+            <div class="p9"><input type="button" value="location"/></div>
+            <div class="p10"><input type="button" value="serach"/></div>
+        </nav>
+    </div>
+    <div>
+    <p class="p7"> <centre>Celebrating 20 Years Of Skymet: India's Voice Of Weather Intelligence</centre></p></br></br>
+    </div>
+    <div class="slider">
+        <div class="slides">
+          <!-- Slide 1 -->
+          <div class="slide">
+            <img src="s1.jpg" alt="Slide 1" width="80%" height="80%">
+          </div>
+          <!-- Slide 2 -->
+          <div class="slide">
+            <img src="s2.jpg" alt="Slide 2" width="80%" height="80%">
+          </div>
+          <!-- Slide 3 -->
+          <div class="slide">
+            <img src="sl3.jpg" alt="Slide 3" width="80%" height="80%">
+          </div>
+        </div>
+      </div>    
+    </div>
+</body>
+</html>

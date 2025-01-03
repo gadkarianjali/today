@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="sky.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .nav1{
+    display: top;
+    margin:0 auto;
+    padding:10px 20px;
+    width:100%;
+    height:20px;
+    background-color: skyblue;
+    display: flex;
+    justify-content: space-evenly;
+}
+.h{
+    padding:5%;
+}
+.p1{
+    border: none;
+    background-color: skyblue;
+    color:white;
+}
+.p2{
+    width: 100px;
+    height: 100px;
+}
+.p3{
+    position: absolute;
+    left: 100px;
+    top: 60px;
+}
+.search-btn {
+    display: inline-flex;
+    align-items: center;
+    padding: 10px 15px;
+    background-color:white
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+  }
+  .search-icon {
+    width: 20px;
+    height: 20px;
+    margin-right: 8px;
+  }
+  .scrolling-container {
+    width: 100%;
+    overflow: hidden;
+  }
+  .scrolling-images {
+    display: flex;
+    animation: scroll 20s linear infinite;
+  }
+  .scrolling-images img {
+    width: 300px;
+    height: auto;
+  }
+  @keyframes scroll {
+    0% {
+      transform: translateX(0);
+    }
+    100% {
+      transform: translateX(-100%); /* Move images to the left */
+    }
+  }
+  </style>
+    </head>
+    <body>
+    <nav class="nav1">
+        <button class="p1">SKYSENSE</button>
+        <button class="p1">SKAIGEO</button>
+        <button class="p1">SIKKA AWARDS</button>
+        <button class="p1">AIR POLLUTION</button>
+        <button class="p1">HINDI STORIES</button>
+        <button class="p1">SATELLITE IMAGES</button>
+        <button class="p1">CORPORATE</button>
+        <button class="p1">CONTACT</button>
+    </nav>
+    <div>
+        <img src="https://play-lh.googleusercontent.com/KhC_QOIl_RFIlMYOwkmhNgOTm8Um1wwpMrZwvqt4s6w1e6V2dn1-cHps5QOUjPJ9dZk" class="p2"/>
+        <h2 class="p3">skymet | weather</h2>
+    </div>
+    <nav class="nav1">
+        <button class="p1">HOME</button>
+        <button class="p1">MAPS</button>
+        <button class="p1">SATELLITES</button>
+        <button class="p1">WEATHER NEWS AND ANALYSIS</button>
+        <button class="p1">VIDEOS</button>
+        <button class="search-btn">
+            <img src="https://tse4.mm.bing.net/th?id=OIP.LwNGX9Hx0mIyG98BgbbpMwHaHa&pid=Api&P=0&h=180" alt="search icon" class="search-icon">Location
+        </button>
+        <button class="search-btn">
+            <img src="https://tse4.mm.bing.net/th?id=OIP.LwNGX9Hx0mIyG98BgbbpMwHaHa&pid=Api&P=0&h=180" alt="search icon" class="search-icon">Search
+        </button>
+    </nav>
+    <div class="scrolling-container">
+        <div class="scrolling-images">
+          <img src="https://tse2.mm.bing.net/th?id=OIP.V5NRUPu_tkRJFp_Rl-FnyAHaHa&pid=Api&P=0&h=180" alt="Image 1">
+          <img src="https://tse4.mm.bing.net/th?id=OIP.debaDUCrSwMCZ-r2rP42BQHaE7&pid=Api&P=0&h=180" alt="Image 2">
+          <img src="https://tse1.mm.bing.net/th?id=OIP.8KdffgUX64aGGBuKSH7AfwHaE8&pid=Api&P=0&h=180" alt="Image 3">
+          <!-- Add more images here -->
+        </div>
+      </div>
+      
+</body>
+</html>
