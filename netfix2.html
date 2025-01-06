@@ -73,6 +73,28 @@
         .css4 {
             margin-left: 30px;
              margin-right: 30px;
+             position: relative;
+            max-width: 180px;
+            flex: 1 1 calc(20% - 15px); /* Adjust width for responsiveness */
+            background-color: #111;
+            border-radius: 8px;
+            overflow: hidden;
+            text-align: center;
+        }
+        .css4 img {
+            width: 100%;
+             height: auto;
+            display: block;
+            border-radius: 8px;
+        }
+        .css4 span {
+        position: absolute;
+        bottom: 10px;
+        left: 10px;
+        font-size: 1.5rem;
+        font-weight: bold;
+        color: #fff;
+        text-shadow: 2px 2px 5px #000;
         }
         .css8 {
             margin-left: 30px;
@@ -84,6 +106,7 @@
         display: flex;
         justify-content: center;
         gap: 20px;
+        flex-wrap: wrap;
         }
         .article {
             background: linear-gradient(145deg, #8e329e, #754d98);
@@ -126,79 +149,62 @@
         font-family: Arial, sans-serif;
         }
 
-.faq-container {
-  padding: 20px;
-}
+        .faq-container {
+        padding: 20px;
+        }
 
-.faq-item {
-  margin-bottom: 10px;
-  border: 1px solid #444;
-  border-radius: 5px;
-  background-color: #222;
-  overflow: hidden;
-}
+        .faq-item {
+        margin-bottom: 10px;
+        border: 1px solid #444;
+        border-radius: 5px;
+        background-color: #222;
+        overflow: hidden;
+        }
 
-summary {
-  cursor: pointer;
-  padding: 15px;
-  font-size: 18px;
-  font-weight: bold;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  background-color: #333;
-  color: #fff;
-  border-radius: 5px;
-}
-
-summary::marker {
-  content: ""; /* Remove default triangle marker */
-}
-
-summary::after {
-  content: "+";
-  font-size: 20px;
-  font-weight: bold;
-  color: #fff;
-  margin-left: auto;
-}
-
-details[open] summary::after {
-  content: "×"; /* Change "+" to "×" when open */
-}
-
-p {
-  padding: 15px;
-  margin: 0;
-  background-color: #111;
-  color: #ccc;
-  font-size: 16px;
-}
-.css14 {
-    align-items: center;
-    border-radius: 75%;
-}
-.css15 {
-    display: flex;
-    margin-left: 30px;
-    margin-right: 30px;
-    align-items: center;
-}
-.css13{
-    margin-left: 30px;
-    margin-right: 30px;
-    color: #060101;
-}
-.css16 {
-    margin-left: 30px;
-    margin-right: 30px;
-    border-radius: 50%;
-}
-.css17 {
-    margin-left: 30px;
-    margin-right: 30px;
-    border-radius: 75%;
-}
+        summary {
+        cursor: pointer;
+        padding: 15px;
+        font-size: 18px;
+        font-weight: bold;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        background-color: #333;
+        color: #fff;
+        border-radius: 5px;
+        }
+    p {
+    padding: 15px;
+    margin: 0;
+    background-color: #111;
+    color: #ccc;
+    font-size: 16px;
+    }
+    .css14 {
+        align-items: center;
+        border-radius: 75%;
+    }
+    .css15 {
+        display: flex;
+        margin-left: 30px;
+        margin-right: 30px;
+        align-items: center;
+    }
+    .css13{
+        margin-left: 30px;
+        margin-right: 30px;
+        color: #060101;
+    }
+    .css16 {
+        margin-left: 30px;
+        margin-right: 30px;
+        border-radius: 50%;
+    }
+        .css17 {
+        margin-left: 30px;
+        margin-right: 30px;
+        border-radius: 75%;
+    }
         .email-container {
             text-align: center;
         }
@@ -247,18 +253,18 @@ p {
             padding: 20px;
             border-radius: 8px;
             box-shadow: 0 4px 8px rgba(16, 5, 5, 0.2);
-            width: 80%; /* Adjust the container width */
+            width: 80%; 
         }
         .css20 ul {
             display: grid;
-            grid-template-columns: repeat(4, 5fr); /* Create 4 columns */
-            gap: 20px; /* Space between items */
+            grid-template-columns: repeat(4, 5fr); 
+            gap: 20px; 
             list-style-type: none;
             padding: 0;
             margin: 0;
         }
         .css20 ul li {
-            text-align: left; /* Align text to the left */
+            text-align: left; 
         }
         .css20 ul li a {
             color: white;
@@ -332,6 +338,17 @@ p {
         color: white;
         max-width: 100%;
         }
+        .css4 .tag {
+        position: absolute;
+        bottom: 10px;
+        right: 10px;
+        background-color: red;
+        padding: 5px 10px;
+        border-radius: 5px;
+        font-size: 0.8rem;
+        font-weight: bold;
+        color: #fff;
+        }
         @media screen and (max-width: 768px) {
         .boxes {
             flex-direction: column;
@@ -344,6 +361,39 @@ p {
         .btn, .btn2 {
             margin-bottom: 10px;
         }
+        .part select {
+        width: 100%; 
+        max-width: 200px; 
+         }
+        @media (max-width: 600px) {
+        .boxes {
+        flex-direction: column; /* Stack boxes vertically on very small screens */
+        gap: 15px; /* Increase gap for better spacing */
+        }
+
+        .css4 img {
+            width: 100%; /* Images take full width of the container */
+        }
+
+        .part select {
+            width: 100%; /* Dropdowns take full width of the container */
+        }
+        @media (max-width: 768px) {
+        .css4 {
+            flex: 1 1 calc(33.33% - 15px);
+        }
+        }
+
+        @media (max-width: 480px) {
+            .css4 {
+                flex: 1 1 calc(50% - 15px);
+            }
+
+        .part {
+            justify-content: center;
+        }
+    }
+    }
     }
 </style>
 </head>

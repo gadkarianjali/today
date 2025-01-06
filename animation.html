@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .top-left {
+
+            position: absolute;
+            width:80px;
+            height:80px;
+            animation: change-box 3s ease 0s infinite;
+        }
+        .top-right {
+           
+            position: absolute;
+            width:80px;
+            height:80px;
+            animation: change-2 3s ease 0s infinite;
+        }
+        .bottom-left {
+           
+            position: absolute;
+            width:80px;
+            height:80px;
+            animation: change-3 3s ease 0s infinite;
+        }
+        .bottom-right {
+            position: absolute;
+            width:80px;
+            height:80px;
+            animation: change-4 3s ease 0s infinite;
+        }
+        @keyframes change-box {
+            0% {
+               top:0;
+               left:0;
+               background-color: red;
+            }
+            50% {
+                top:50%;
+                left:50%;
+                border-radius: 50%;
+                background-color: orange;
+            }
+        }
+        @keyframes change-2 {
+            0% {
+               top:0;
+               left:100%;
+               background-color: yellow;
+            }
+            50% {
+                top:50%;
+                left:50%;
+                border-radius: 50%;
+                background-color: orange;
+            }
+        }
+        @keyframes change-3 {
+            0% {
+               top: 100%;
+               left: 0rem;
+               background-color: green;
+            }
+            50% {
+                top:50%;
+                left:50%;
+                border-radius: 50%;
+                background-color: orange;
+            }
+        }
+        @keyframes change-4 {
+            0% {
+               top:100%;
+               left:100%;
+               background-color: blue
+            }
+            50% {
+                top:50%;
+                left:50%;
+                border-radius: 50%;
+                background-color: orange;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="conatiner">
+        <div class="top-left"></div>
+        <div class="top-right"></div>
+        <div class="bottom-left"></div>
+        <div class="bottom-right"></div> 
+    </div>
+</body>
+</html>
